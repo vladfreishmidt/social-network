@@ -1,6 +1,9 @@
+import s from './Profile.module.css';
+
+
 const Profile = () => {
     return (
-        <main className='main'>
+        <main className={s.main}>
             <div>
                 <img src='https://afar-production.imgix.net/uploads/images/afar_post_headers/images/s6P1cWj2kE/original_hawaii_202019.jpg' alt='profile background' />
             </div>
@@ -10,21 +13,21 @@ const Profile = () => {
           Devid Desk
         </div>
 
-            <div className="user-posts">
+            <div>
                 <div>
                     create new post
                 </div>
-                <div className="feed">
-                    <div>
+                <div className={s.posts}>
+                    <div className={s.item}>
                         Post 1
                     </div>
-                    <div>
+                    <div className={s.item}>
                         Post 2
                     </div>
-                    <div>
+                    <div className={s.item}>
                         Post 3
                     </div>
-                    <div>
+                    <div className={s.item}>
                         Post 4
                     </div>
                 </div>

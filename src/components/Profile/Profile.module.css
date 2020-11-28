@@ -1,0 +1,8 @@
+.main {
+    grid-area: main;
+    background-color: #403164;
+}
+
+.item {
+  color: #fff;
+}

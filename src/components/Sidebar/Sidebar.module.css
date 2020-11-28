@@ -1,0 +1,23 @@
+.sidebar {
+    grid-area: sd;
+    background-color: #403164;
+    padding: 50px 10px;
+}
+
+.item a {
+  color: #7b78c3;
+  padding: 20px 10px 20px 40px;
+  display: block;
+  transition: all .3s ease-in;
+}
+
+.item a:hover {
+  background-color: #2b274c;
+  color: #fff;
+}
+
+.item.active a {
+  background-color: #6462fd;
+  color: #fff;
+  pointer-events: none;
+}
