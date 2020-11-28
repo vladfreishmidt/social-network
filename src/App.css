@@ -1,3 +1,60 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #2b274c;
+  color: #fff;
+}
+
+a {
+  color: #7b78c3;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.btn {
+  background-color: #6462fd;
+  color: #fff;
+}
+
+.app-wrapper {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  gap: 10px;
+  grid-template-areas: 
+      "hd hd"
+      "sd main";
+}
+
+.header {
+  grid-area: hd;
+  background-color: #403164;
+  margin-top: 10px;
+}
+
+.sidebar {
+  grid-area: sd;
+  background-color: #403164;
+}
+
+.main {
+  grid-area: main;
+  background-color: #403164;
+}
+
+.header__logo {
+  height: 60px;
+}
+
 .App {
   text-align: center;
 }
