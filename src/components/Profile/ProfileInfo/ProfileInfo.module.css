@@ -1,0 +1,25 @@
+.profile__wallpaper {
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.user__info {
+    display: flex;
+    padding: 10px;
+}
+
+.user__name {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.user__details {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.user__details div:not(:last-child) {
+    margin-bottom: 10px;
+}

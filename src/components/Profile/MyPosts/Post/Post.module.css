@@ -1,0 +1,38 @@
+.item {
+    width: 60%;
+    min-height: 80px;
+    margin: 10px auto 20px;
+    padding: 15px 20px;
+    background-color: #7b78c3;
+    color: #fff;
+}
+
+.item__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item__author_name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3f3d44;
+}
+
+.item__author_photo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.item__message {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.item__likes {
+    display: flex;
+    justify-content: flex-end;
+}

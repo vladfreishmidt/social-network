@@ -1,34 +1,35 @@
 import s from './Sidebar.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
         <aside className={s.sidebar}>
             <nav>
                 <ul>
-                    <li className={`${s.item} ${s.active}`}>
-                        <a className='sidebar__link' href='/profile'>
+                    <li className={s.item}>
+                        <NavLink to='/profile' activeClassName={s.active} className='sidebar__link' >
                             Profile
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
-                        <a className='sidebar__link' href='/inbox'>
+                        <NavLink activeClassName={s.active} className='sidebar__link' to='/chats'>
                             Messages
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
-                        <a className='sidebar__link' href='/news'>
+                        <NavLink activeClassName={s.active} className='sidebar__link' to='/news'>
                             News
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
-                        <a className='sidebar__link' href='/music'>
+                        <NavLink activeClassName={s.active} className='sidebar__link' to='/music'>
                             Music
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={s.item}>
-                        <a className='sidebar__link' href='/settings'>
+                        <NavLink activeClassName={s.active} className='sidebar__link' to='/settings'>
                             Settings
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

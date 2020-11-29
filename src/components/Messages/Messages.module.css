@@ -1,0 +1,40 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 100%;
+}
+
+.dialogsItems {
+    padding: 10px;
+}
+
+.dialog a {
+    color:#7b78c3;
+    padding: 10px 8px;
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.dialog a:hover {
+    background-color: #2b274c;
+    color: #fff;
+}
+
+.dialog a.activeChat {
+    background-color: #2b274c;
+    color: #fff;
+}
+
+.messages {
+    padding: 10px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.message {
+
+}
+
+.message {
+    
+}

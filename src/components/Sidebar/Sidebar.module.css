@@ -16,7 +16,7 @@
   color: #fff;
 }
 
-.item.active a {
+.item a.active {
   background-color: #6462fd;
   color: #fff;
   pointer-events: none;

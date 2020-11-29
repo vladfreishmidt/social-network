@@ -25,6 +25,7 @@ ul {
 .app-wrapper {
   display: grid;
   max-width: 1200px;
+  height: 100vh;
   margin: 0 auto;
   grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
@@ -32,6 +33,11 @@ ul {
   grid-template-areas: 
       "hd hd"
       "sd main";
+}
+
+.app-wrapper-content {
+  grid-area: main;
+  background-color: #403164;
 }
 
 
