@@ -2,6 +2,15 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+    let PostsData = [
+        { id: 1, name: 'Vlad F', likes: 2, message: 'Hi! My names is Sarah' },
+        { id: 2, name: 'Vlad F', likes: 2, message: 'Hi! My names is Elon' },
+        { id: 4, name: 'Vlad F', likes: 2, message: 'Hi! My names is Rossario' },
+    ];
+
+    let postsElements = PostsData.map(post => <Post name={post.name} message={post.message} likes={post.likes} />);
+
     return (
         <div className={s.feed}>
             <h3 className={s.feed__title}>My Posts</h3>
@@ -16,10 +25,7 @@ const MyPosts = () => {
             </div>
             {/* POSTS */}
             <div className={s.posts}>
-                <Post name='Vlad Freishmidt' message='Hi, how are you? Lorem30dewfwefwefwefewfewfewfewfewf wqdfrgtrhrhyrhtrht ergrehtehet gerhyjkilo ertyjukiu ' likes="5" />
-                <Post name='Vlad Freishmidt' message="It's my first post!" likes="0" />
-                <Post name='Vlad Freishmidt' message="Yay I'm a post too!" likes="2" />
-                <Post name='Vlad Freishmidt' message="I'm learning React.js and that's great!!!" likes="23" />
+                {postsElements}
             </div>
         </div>
     );
